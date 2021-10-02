@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: black;
+  font-family: "Roboto", monospace;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: black;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* ------- MEDIA QUIERIES ------- */
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 360px) {
+  .container {
+    max-width: 330px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 460px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1160px;
+  }
+  .container.container-large {
+    max-width: 1385px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  .header-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .options {
+    font-size: 75%;
+    align-self: center;
+    margin-top: 1%;
+  }
+
+  .contact-info-container {
+    width: 90% !important;
+    font-size: 80%;
+  }
+}
+
+/* ------- NAV ------- */
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px 30px 0px;
+  width: 100%;
+  border-bottom: 8px solid black;
+}
+
+.site-logo {
+  font-size: 150%;
+  font-weight: 400;
+}
+
+.site-logo a {
+  text-decoration: none;
+}
+
+.header-nav ul {
+  list-style: none;
+  float: right;
+}
+
+.header-nav li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 30px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  font-size: 120%;
+}
+
+/* ------- MAIN STUFF ------- */
+
+.main-container {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+.contact-card {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.photo-container img {
+  max-width: 150px;
+  padding: 2%;
+}
+
+.contact-info-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info {
+  margin-left: 3%;
+  margin-right: 3%;
+  list-style: none;
+}
+
+.bold.name {
+  font-size: 150%;
+  font-weight: 400;
+}
+.contact-icons-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fas,
+.fab {
+  font-size: 150%;
+  margin-right: 3%;
+}
+
+.footer {
+  margin-top: 5%;
+}
